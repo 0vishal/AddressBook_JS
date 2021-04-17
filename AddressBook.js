@@ -77,9 +77,10 @@ try {
 
 console.log(book)
 
-let duplicate = book.map(eval => eval.getfirstname === addressbook2.getfirstname);
+let duplicate = book.map(eval => eval.getfirstname === book[1].firstname);
 console.log(duplicate);
 
+let addressbook3 = new AddressBook("Parmeet","Salaskar","Ghatkopar","Mumbai","Maharashtra",400075,9898189891,"vishal@gmail.com");
 if (duplicate.includes(true)) {
     console.log("Contact already in Adressbook ");
 } else { book.push(addressbook3); }
@@ -99,4 +100,12 @@ console.log("After: " + book.length);
 
 console.log(book.length + " contacts are in addressBook ")
 
+
+let city = book.map(eval => eval.city === 'Mumbai' );
+let searchByCity = city.reduce((a, b)=> a + b); 
+console.log("contact by city are: "+searchByCity);
+
+let state = book.map(eval => eval.state === 'Maharashtra' );
+let searchByState = state.reduce((a, b)=> a + b); 
+console.log("contact by state are: "+searchByState);
 
