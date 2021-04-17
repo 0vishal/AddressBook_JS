@@ -77,6 +77,14 @@ try {
 
 console.log(book)
 
+let duplicate = book.map(eval => eval.getfirstname === addressbook2.getfirstname);
+console.log(duplicate);
+
+if (duplicate.includes(true)) {
+    console.log("Contact already in Adressbook ");
+} else { book.push(addressbook3); }
+console.log(book);
+
 if (book.find(name => name.firstname == 'Sarvesh')) {
     book.find(name => name.setfirstname = 'Krunal');
 } else { console.log("This Name Contact not in addressBook"); }
