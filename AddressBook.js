@@ -114,3 +114,7 @@ console.log("contact by state are: "+searchByState);
 console.log("view contact by city: \n"+book.filter(values => values.city == 'Mumbai'));
 console.log()
 console.log("view contact by state: \n"+book.filter(values => values.state == 'Maharashtra'));
+
+
+console.log("After Sorting")
+console.log(book.sort());
