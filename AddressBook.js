@@ -68,3 +68,20 @@ try {
 } catch (e) {
     console.error(e);
 }
+
+
+let addressBook = [];
+try {
+    let contact1 = new AddressBook("Vishal","Salaskar","Ghatkopar","Mumbai","Maharashtra",400075,955709490,"vishal@gmail.com");
+    let contact2 = new AddressBook("Sarvesh", "Shah", "Kurla", "Navimumbai", "Maharashtra", 759090, 8799090925, "shah@gmail.com");
+
+    addressBook.push(contact1);
+    addressBook.push(contact2);
+
+
+} catch (e) {
+    console.error(e);
+}
+
+console.log(addressBook);
+
